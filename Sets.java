@@ -31,7 +31,7 @@ public class Sets {
         int b = sc.nextInt();
         int[] arr1 = new int[a];
         int[] arr2 = new int[b];
-        int[] fina = arr2;  
+        int[] fina = new int[arr2.length];  
         int ans = 0;
         for (int i = 0; i < a; i++) {
             arr1[i] = sc.nextInt();
@@ -41,8 +41,10 @@ public class Sets {
         }
         for (int i = 0; i < arr2.length; i++) {
             int[] temp1 = CF(arr2[i]);
-            fina = CE(fina,temp1);
         }
+        int[] sam = {0,1,2,3,4,5};
+        int[] sam2 = {0,1,2,3,7,6};
+        fina = CE(sam,sam2);
 
         for (int i = 0; i < fina.length; i++) {
             System.out.println(fina[i]);

@@ -14,11 +14,25 @@ public class test {
         }
         return solarr;
     }
-    
+
+    public static int partition(int a[],int beg,int end){
+        int left,right,temp,loc,flag;
+        loc = left = beg;
+        right = end;
+        flag = 0;
+        while(flag != 1){
+            
+        }
+    }
+
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
-        int[] b = CF(a);
+        int[] b = new int[a];
+        for (int i = 0; i < b.length; i++) {
+            b[i] = sc.nextInt();
+        }
+        sort(b,0,a-1);
         for (int i = 0; i < b.length; i++) {
             System.out.print(b[i] + " ");
         }
