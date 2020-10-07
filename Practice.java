@@ -3,14 +3,14 @@ import java.util.*;
 public class Practice {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        ArrayList arr = new ArrayList();
         int n = sc.nextInt();
+        System.out.println(fact(n));
+    }
+    public static int fact(int n){
+        int ans = 1;
         for (int i = 0; i < n; i++) {
-            int m = sc.nextInt();
-            arr.add(m);
+            ans = ans * (n - i);
         }
-        String k = sc.next();
-        arr.add(k);
-        System.out.println(arr);
+        return ans;
     }
 }
